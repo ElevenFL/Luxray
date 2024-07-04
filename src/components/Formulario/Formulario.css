@@ -1,0 +1,32 @@
+*{
+    color: #ffffff;
+}
+
+label{
+    font-family: monospace;
+}
+
+.field-input{
+    background-color: transparent !important;
+    color: #ffffff !important;
+}
+
+
+
+
+.btn-primary{
+    font-family: monospace;
+    background-color: #22d3ee;
+    color: azure;
+}
+
+.btn-primary:hover{
+    background-color: #0891b2;
+    color: azure;
+}
+
+option{
+    background-color: #212529;
+    color: #ffffff;
+    font-family: monospace;
+}

@@ -1,0 +1,22 @@
+.nav-container{
+    width: 30%;
+}
+
+.navbar{
+    background-color: #18181b;
+}
+
+.btn{
+    font-family: monospace;
+    color: #22d3ee;
+}
+
+.btn:hover{
+    background-color: #22d3ee;
+    border-color: azure;
+}
+
+.luxray{
+    width: 100px;
+    margin-bottom: 3px;
+}

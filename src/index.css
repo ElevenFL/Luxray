@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .search-bar {
+    @apply bg-gradient-to-r from-[#000000D5] to-[#6768686E];
+  }
+}
+
+@layer utilities {
+  .product-bg-color {
+    @apply bg-gradient-to-r from-[#000000d5] to-[#6768686e];
+  }
+}
+
+
+body {
+  background-color: #212529;
+}
+
+h1{
+  font-family: monospace;
+  color: #22d3ee;
+}
+
+i:hover{
+  color: #22d3ee;
+}

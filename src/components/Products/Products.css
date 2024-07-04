@@ -1,0 +1,12 @@
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 100px;
+    object-fit: cover;
+  }
+  
+  .size {
+    height: 400px; /* Ajusta esta altura según tus necesidades */
+    overflow: hidden;
+  }
+  
