@@ -18,13 +18,11 @@ const CarouselComponent = () => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <Container className='size'>
           <img
             className="d-block w-100"
             src="./src/assets/Products/img2.png"
             alt="Second slide"
           />
-        </Container>
         <Carousel.Caption>
           <h3>Combo auriculares G435 y mouse G300</h3>
         </Carousel.Caption>
