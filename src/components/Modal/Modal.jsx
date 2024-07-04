@@ -13,7 +13,8 @@ const Modal = (props) => {
         description: props.item.description ||'',
         image: props.item.image ||'',
         price: props.item.price || 0,
-        stock: props.item.stock || 0
+        stock: props.item.stock || 0,
+        category: props.item.category ||''
     }
     
     const formSchema = Yup.object().shape({
@@ -31,6 +32,8 @@ const Modal = (props) => {
         .required('Campo obligatorio'),
         stock: Yup.number()
         .required('Campo obligatorio'),
+        category: Yup.string()
+        .required('Campo obligatorio'),
         
     })
 
@@ -45,9 +48,9 @@ const Modal = (props) => {
         aria-labelledby="contained-modal-title-vcenter"
         centered
     >
-        <ModalBs.Header closeButton className='bg-dark'>
+        <ModalBs.Header className='bg-dark'>
             <ModalBs.Title id="contained-modal-title-vcenter">
-                Modal heading
+                Editar Producto
             </ModalBs.Title>
         </ModalBs.Header>
         <ModalBs.Body className='bg-dark'>
@@ -73,6 +76,24 @@ const Modal = (props) => {
                 {
                 errors.name && touched.name && (
                     <ErrorMessage name='name' component="div"></ErrorMessage>
+                )
+                }
+            </FormBs.Group>
+
+            <FormBs.Group className='mb-3'>
+                <label htmlFor="category">Categoria</label>
+                <Field id="category" name="category" as="select" placeholder="Categoria del Producto" className="form-control field-input">
+                <option value="" disabled>Seleccione una categoría</option>
+                <option value="Placa de video">Placa de video</option>
+                <option value="Procesadores">Procesadores</option>
+                <option value="Memoria Ram">Memoria Ram</option>
+                <option value="Mothers">Mothers</option>
+                <option value="Almacenamiento">Almacenamiento</option>
+                <option value="Perifericos">Perifericos</option>
+                </Field>
+                {
+                errors.description && touched.description && (
+                    <ErrorMessage name='category' component="div"></ErrorMessage>
                 )
                 }
             </FormBs.Group>
@@ -134,7 +155,7 @@ const Modal = (props) => {
 
         </ModalBs.Body>
         <ModalBs.Footer className='bg-dark'>
-            <Button onClick={props.onHide}>close</Button>
+            <Button onClick={props.onHide}>Cerrar</Button>
         </ModalBs.Footer>
 
     </ModalBs>

@@ -21,9 +21,9 @@ const ItemTable = ({ item, editItem }) => {
                 <td>{id}</td>
                 <td>{name}</td>
                 <td>{category}</td>
-                <td>{price}</td>
+                <td>${price}</td>
                 <td>{stock}</td>
-                <td>{price * stock}</td>
+                <td>${price * stock}</td>
                 <td className='text-center'>
                     <i style={{ cursor: "pointer" }} className="ms-1 px-2 bi bi-pencil-square" onClick={() => setModalShow(true)}></i>
                     <i style={{ cursor: "pointer" }} className="px-2 bi bi-trash3-fill" onClick={() => handleDelete(id)}></i> 

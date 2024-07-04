@@ -50,7 +50,7 @@ const ShowProducts = () => {
   return (
     
     <div>
-      <h1 className='text-center py-3'>Productos</h1>
+      <h1 className='text-center py-5'>Productos</h1>
       <div className='container'>
         {
           items.length > 0 ?

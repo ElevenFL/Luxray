@@ -5,7 +5,7 @@ const CreateProduct = () => {
   return (
     <div className="w-2/3 mx-auto">
 
-        <h1 className='text-center py-5'>Agregar productos</h1>
+        <h1 className='text-center py-5'>Agregar Productos</h1>
         <FormCreateProduct/>
 
     </div>
